@@ -7,13 +7,15 @@ import { AdminNavBarComponent } from './admin-nav-bar/admin-nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminNavBarComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,10 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
